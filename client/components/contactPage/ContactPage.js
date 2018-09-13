@@ -1,13 +1,14 @@
 import React, { Component } from 'react'
-// import ContactFrom from './ContactForm'
+import ContactForm from './ContactForm'
 
-class ContactPage extends Component {
+export default class ContactPage extends Component {
   constructor() {
     super()
 
     this.state = {
       name: '',
       email: '',
+      interestedIn: '',
       message: ''
     }
 
@@ -33,9 +34,8 @@ class ContactPage extends Component {
 
     return (
       <div>
-        <ContactForm />
-
-
+        <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.state.handleChange} handleSubmit={this.state.handleSubmit}
+        interestedIn={this.state.interestedIn}/>
       </div>
     )
   }

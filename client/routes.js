@@ -13,7 +13,6 @@ export default class Routes extends Component {
     return (
       <div>
         <Route exact path="/contact-us" component={ContactPage}/>
-
       </div>
     )
   }

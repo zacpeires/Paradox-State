@@ -10,7 +10,9 @@ export default class Navbar extends Component {
   render() {
     return (
       <div className="navbar-container">
+        <Link to="/home">
         <h3>Paradox State</h3>
+        </Link>
         <div className="navbar-titles">
           <Link to="/lasers">
             <div>Lasers</div>
@@ -25,6 +27,11 @@ export default class Navbar extends Component {
             <div>CGI</div>
           </Link>
         </div>
+        <Link to="/contact-us">
+        <div className="contact-link">
+          Contact Us
+        </div>
+        </Link>
       </div>
     );
   }

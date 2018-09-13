@@ -24,7 +24,9 @@ a {
   background-color: #bf1616;
   height: 60px;
   display: flex;
-  margin-right: 10px
+  margin-right: 10px;
+  position: relative;
+  align-items: center;
 }
 
 .navbar-titles {
@@ -37,11 +39,47 @@ a {
   margin-left: 15px;
   margin-right: 20px;
   text-decoration: underline;
+  color: white;
 }
 
 .navbar-titles > a {
   margin: 10px;
   font-size: 16px;
   border-left: 1px;
-  color: black
+  color: white;
+}
+
+.navbar-titles > a:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+
+.contact-link {
+  position: absolute;
+  right: 18px;
+  color: white;
+  bottom: 19.5px;
+}
+
+.contact-link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+/* .contact-form-container {
+} */
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.contact-form-container form input {
+  width: 150px;
+}
+
+.contact-form-container form button {
+  width: 50px;
 }
