@@ -40,6 +40,10 @@ class ContactPage extends Component {
 
     return (
       <div>
+        <div className="contact-form-text">
+          <h3>Contact us</h3>
+          <div>If you have any questions regarding a project, get in touch</div>
+        </div>
         <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
       </div>
     )
