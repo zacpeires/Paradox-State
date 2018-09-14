@@ -13,9 +13,13 @@ const enquriy = db.define('enquiry', {
       isEmail: true
     }
   },
+  // interestedIn: {
+  //   type: Sequelize.STRING,
+  //   allowNull: false
+  // },
   message: {
     type: Sequelize.TEXT,
-    allowNull: false
+    allowNull: true
   }
 })
 

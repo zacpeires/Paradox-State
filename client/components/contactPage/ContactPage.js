@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import ContactForm from './ContactForm'
+import { connect } from 'react-redux'
+import { gotNewEnquiry } from '../../store'
 
-export default class ContactPage extends Component {
+class ContactPage extends Component {
   constructor() {
     super()
 
     this.state = {
       name: '',
       email: '',
-      interestedIn: '',
       message: ''
     }
 
@@ -20,13 +21,13 @@ export default class ContactPage extends Component {
     this.setState({
       [event.target.name]: event.target.value
     })
-
-     console.log(this.state)
   }
 
 
   handleSubmit(event) {
     event.preventDefault();
+
+    this.props.gotNewEnquiry(this.state)
 
     this.setState({
       name: '',
@@ -39,10 +40,14 @@ export default class ContactPage extends Component {
 
     return (
       <div>
-        <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit}
-        interestedIn={this.state.interestedIn}/>
+        <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
       </div>
     )
   }
 }
 
+const mapDispatchToProps = (dispatch) => ({
+  gotNewEnquiry: (enquiry) => dispatch(gotNewEnquiry(enquiry))
+})
+
+export default connect(null, mapDispatchToProps)(ContactPage)

@@ -79,8 +79,11 @@ a {
   height: 100px;
 }
 
+textarea {
+  resize: none;
+}
 
-.contact-form-container form input {
+.contact-form-container form textarea {
   width: 55%;
   height: 40px;
   margin-bottom: 26px;
@@ -108,4 +111,11 @@ a {
 
 .contact-form-container form button:hover {
   background-color: darkred;
+  color: grey;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
