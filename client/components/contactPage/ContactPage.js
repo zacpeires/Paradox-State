@@ -16,13 +16,18 @@ export default class ContactPage extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleChange() {
+  handleChange(event) {
     this.setState({
       [event.target.name]: event.target.value
     })
+
+     console.log(this.state)
   }
 
-  handleSubmit() {
+
+  handleSubmit(event) {
+    event.preventDefault();
+
     this.setState({
       name: '',
       email: '',
@@ -34,7 +39,7 @@ export default class ContactPage extends Component {
 
     return (
       <div>
-        <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.state.handleChange} handleSubmit={this.state.handleSubmit}
+        <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit}
         interestedIn={this.state.interestedIn}/>
       </div>
     )

@@ -10,8 +10,8 @@ const ContactForm = (props) => {
         <input type="text" name="name" value={name} onChange={handleChange}/>
         <div>Email</div>
         <input type="text" name="email" value={email} onChange={handleChange}/>
-        <div>Leave us a message</div>
-        <input type="text" name="message" value={message} onChange={handleChange}/>
+        <div>Leave a message</div>
+        <input type="text" name="message" value={message} onChange={handleChange} id="leave-a-message"/>
         <button type="submit">
         Submit
         </button>
