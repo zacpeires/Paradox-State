@@ -1,0 +1,82 @@
+
+.contact-link {
+  position: absolute;
+  right: 18px;
+  color: white;
+  bottom: 19.5px;
+}
+
+.contact-link:hover {
+  color: grey;
+  text-decoration: underline;
+}
+
+.contact-form-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4%;
+  margin-right: 42%;
+}
+
+#leave-a-message {
+  height: 100px;
+}
+
+textarea {
+  resize: none;
+}
+
+.contact-form-container form textarea {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 26px;
+  margin-top: 10px;
+  border: solid 2px grey;
+  border-radius: 5px;
+}
+
+.contact-form-input-sections {
+  width: 55%;
+}
+
+
+.contact-form-container form button {
+  width: 80px;
+  height: 50px;
+  margin-right: 46.15%;
+  font-weight: bold;
+  font-size: 13px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+}
+
+.contact-form-container form button:hover {
+  background-color: darkred;
+  color: grey;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.contact-form-text h3 {
+  font-size: 30px;
+  margin-top: 6%;
+  margin-left: 13.3%;
+  margin-bottom: 8px;
+}
+
+.contact-form-text div {
+  margin-left: 13.5%;
+}
+
+.contact-page-container video {
+  position: absolute;
+  height: 480px;
+  top: 180px;
+  right: 100px;
+}

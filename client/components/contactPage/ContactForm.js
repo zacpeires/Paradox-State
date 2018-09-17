@@ -45,7 +45,7 @@ const ContactForm = props => {
           />
         </div>
         <div  className="contact-form-input-sections">
-        <button type="submit">Submit</button>
+        <button type="submit" disabled={ name && email ? false : true}>Submit</button>
         </div>
       </form>
     </div>

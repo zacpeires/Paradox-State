@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import ContactForm from './ContactForm'
 import { connect } from 'react-redux'
 import { gotNewEnquiry } from '../../store'
+import './contact-form.css'
 
 class ContactPage extends Component {
   constructor() {
@@ -39,12 +40,13 @@ class ContactPage extends Component {
   render() {
 
     return (
-      <div>
+      <div className="contact-page-container">
         <div className="contact-form-text">
           <h3>Contact us</h3>
           <div>If you have any questions regarding a project, get in touch</div>
         </div>
         <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
+        <video src="anubis-dance-SNAKE_1.mp4" autoPlay loop/>
       </div>
     )
   }
