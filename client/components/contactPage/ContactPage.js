@@ -37,6 +37,8 @@ class ContactPage extends Component {
     })
   }
 
+  // OnSubmit of form should trigger a change of state, that shows a thank you message. Use a ternary expression
+
   render() {
 
     return (
@@ -46,7 +48,7 @@ class ContactPage extends Component {
           <div>If you have any questions regarding a project, get in touch</div>
         </div>
         <ContactForm name={this.state.name} email={this.state.email} message={this.state.message} handleChange={this.handleChange} handleSubmit={this.handleSubmit} />
-        <video src="anubis-dance-SNAKE_1.mp4" autoPlay loop/>
+        <video src="./media/anubis-dance-SNAKE_1.mp4" autoPlay loop/>
       </div>
     )
   }
